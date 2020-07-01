@@ -1,0 +1,92 @@
+.header {
+  margin-top: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header-top {
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+
+.header-top__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header-logo {
+  color: inherit;
+  text-decoration: inherit;
+  font-family: RobotoThin;
+  font-size: 100px;
+}
+
+.header-top__navbar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header-top__seperator {
+  width: 100%;
+  border: none;
+  height: 2px;
+  margin-top: 2px;
+  background-color: black;
+}
+
+.header-top__navigation {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 55px;
+}
+
+.header-bottom {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.header-bottom__email {
+  margin-right: 55px;
+}
+
+.header-bottom__phone {
+  margin-right: 65px;
+}
+
+.header-bottom__bag {
+  position: absolute;
+  display: flex;
+}
+
+.header-bottom__bag-icon {
+  position: relative;
+  display: flex;
+  left: -5px;
+  width: 30px;
+  height: 30px; 
+}
+
+.header-bottom__bag-count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: RobotoRegular;
+  right: 0px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+}
