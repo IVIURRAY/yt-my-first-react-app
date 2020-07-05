@@ -1,42 +1,33 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Header, Footer } from './components/common'
+import { Switch, Route } from 'react-router-dom';
+import { Header, Footer, PageTitle } from './components/common'
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-        <br />
-        <br />
-        <br />
-        <br />
-        <Router>
-          <Link to="/about">Button About</Link>
-          <br />
-          <Link to="/contact">Button Contact</Link>
-          <br />
-          <Link to="/">Button Home</Link>
-          <br />
-          <br />
-          <br />
+      <Header />  
           <Switch>
             <Route path="/contact">
-              Contact Me
+              <PageTitle title="contact"/>
+            </Route>
+            <Route path="/blog">
+              <PageTitle title="blog"/>
+            </Route>
+            <Route path="/shop">
+              <PageTitle title="shop"/>
+            </Route>
+            <Route path="/portfolio">
+              <PageTitle title="portfolio"/>
             </Route>
             <Route path="/about">
-              <Footer /> 
+              <PageTitle title="about"/>
             </Route>
             <Route path="/">
-              Home
+              <PageTitle title="home"/>
             </Route>
           </Switch>
-        </Router>
-        <br />
-        <br />
-        <br />
-        <br />
       <Footer />
     </div>
   );

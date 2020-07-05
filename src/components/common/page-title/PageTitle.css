@@ -1,0 +1,8 @@
+.title {
+  font-family: RobotoThin;
+  font-size: xx-large;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
